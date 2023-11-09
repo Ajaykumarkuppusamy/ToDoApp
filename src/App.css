@@ -1,0 +1,49 @@
+*{
+  margin:0;
+  padding:0;
+  font-size: medium;
+}
+.App{
+  margin:auto auto;
+  box-sizing: border-box;
+  max-width:720px;
+  padding:20px;
+}
+h1{
+  padding:20px;
+  display:inline;
+  margin:10px;
+}
+.filters{
+  display:flex;
+  justify-content: space-around;
+  padding:20px;
+}
+.completed {
+  text-decoration: line-through; 
+  color: gray;
+}
+.Input{
+  margin:10px;
+  padding: 2px;
+  border: 1px solid white;
+  border-bottom: 2px solid lightgray;
+}
+.red{
+  display:inline-block;
+  color: red;
+  margin-left: 20px;
+}
+
+.btn{
+  width: 100%;
+  background-color: rgb(42, 107, 238);
+  color: white;
+}
+.completed{
+
+}
+.deleteButton{
+  background-color: red;
+  color: white;
+}
