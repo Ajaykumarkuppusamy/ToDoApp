@@ -1,12 +1,14 @@
 *{
   margin:0;
   padding:0;
-  font-size: medium;
+  font-size: large;
+  font-family: sans-serif;
 }
 .App{
   margin:auto auto;
   box-sizing: border-box;
   max-width:720px;
+  box-sizing: border-box;
   padding:20px;
 }
 h1{
@@ -14,20 +16,38 @@ h1{
   display:inline;
   margin:10px;
 }
-.filters{
-  display:flex;
+
+.filters {
+  margin: 10px 0;
+  display: flex;
   justify-content: space-around;
-  padding:20px;
+  padding: 10px;
+  font-weight: bolder;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-item {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-item:hover {
+  background-color: #e0e0e0;
 }
 .completed {
   text-decoration: line-through; 
   color: gray;
 }
 .Input{
-  margin:10px;
-  padding: 2px;
+  margin: 12px 0;
   border: 1px solid white;
   border-bottom: 2px solid lightgray;
+  font-weight: 500;
+  font-size: large;
 }
 .red{
   display:inline-block;
@@ -39,11 +59,18 @@ h1{
   width: 100%;
   background-color: rgb(42, 107, 238);
   color: white;
+  border-radius: 10px;
+  min-height:5vh;
+  font-weight: 600;
+  margin: 10px 0;
 }
-.completed{
 
-}
 .deleteButton{
   background-color: red;
+  border-radius: 10px;
+  margin: 12px 0;
   color: white;
+}
+.deleteButton div{
+  margin : auto auto;
 }

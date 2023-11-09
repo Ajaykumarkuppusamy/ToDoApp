@@ -43,9 +43,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 >TODO</h1>
+      <h1 >TODO APP </h1>
       <div className="red">
-        {todos.filter((todo) => !todo.completed).length} items Left
+        {todos.filter((todo) => !todo.completed).length} items yet to be processed
       </div>
       <div >
         <Input className="Input"
@@ -58,9 +58,9 @@ function App() {
           Add
         </button>
         <div className='filters'>
-          <div onClick={() => handleFilterChange('All')}>All</div>
-          <div onClick={() => handleFilterChange('Active')}>Active</div>
-          <div onClick={() => handleFilterChange('Complete')}>Complete</div>
+          <div className='filter-item' onClick={() => handleFilterChange('All')}>All</div>
+          <div className='filter-item' onClick={() => handleFilterChange('Active')}>Active</div>
+          <div className='filter-item' onClick={() => handleFilterChange('Complete')}>Complete</div>
         </div>
         <List
           dataSource={filteredTodos}
